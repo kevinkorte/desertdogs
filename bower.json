@@ -1,0 +1,12 @@
+{
+  "name": "desert-dogs-unleashed",
+  "version": "0.1.0",
+  "authors": [
+    "Kevin Korte"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation": "~5.3.3"
+  }
+}
