@@ -14,7 +14,8 @@ line option, or by changing your Sass configuration options.
 */
 @import 'lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 
-body {
-	background: red;
-	padding: 10px;
-}
+@import "settings";
+@import "base";
+@import "layout";
+@import "module";
+@import "theme";

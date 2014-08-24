@@ -1,0 +1,25 @@
+
+Author:
+Kevin Korte
+Reach me on Twitter @kevindkorte
+
+
+Version Control:
+Github: https://github.com/kevinkorte/desertdogs
+
+Tools:
+Bower
+Grunt
+Sass
+
+CSS Framework:
+Bootstrap V3.2.0+1
+Bower was used to install the Sass port for Bootstrap
+Running "bower update" on the command line should ensure the latest versions of Bootstrap are installed. jQuery is a dependency for boostrap, and will update as well
+
+CSS Layout:
+I attempted to follow a mixture of two guidlines for structure when dealing with Sass. The first is SMACSS (Scalable and Modular Architecture for CSS) in which you'll see flags on classes such as "l" or "m". This is coming from SMACSS and refers to the file you'll find that class in, "l" for layout, "m" for module, "t" for theme and so on.
+Read more here: https://smacss.com/book/
+
+The other convention I attempted to follow Code Guide by @mdo. Very simple and practice advice. More can be found at http://codeguide.co/
+
