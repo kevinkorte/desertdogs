@@ -1,4 +1,5 @@
 .m-post-wrapper {
-	background: #fff;
-	padding: em(25px);
+	@extend .col-md-6;
+	background-size: cover;
+	background-position: center;
 }

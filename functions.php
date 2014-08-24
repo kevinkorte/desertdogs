@@ -6,3 +6,7 @@ function ddu_style() {
 
 //Enqueue our styles and scripts
 add_action( "wp_enqueue_scripts", "ddu_style");
+
+//Give blogs the option for "featured images"
+add_theme_support( "post-thumbnails" );
+
