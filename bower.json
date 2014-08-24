@@ -6,7 +6,5 @@
   ],
   "license": "MIT",
   "private": true,
-  "dependencies": {
-    "foundation": "~5.3.3"
-  }
+  "dependencies": {}
 }

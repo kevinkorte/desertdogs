@@ -4,3 +4,17 @@ Theme URI: http://www.desertdogsunleashed.com
 Author: Kevin Korte
 Version: 1.0
 */
+
+/*
+FYI for future fix
+DEPRECATION WARNING: Importing from the current working directory will not be
+automatic in future versions of Sass.  To avoid future errors, you can add it
+to your environment explicitly by setting `SASS_PATH=.`, by using the -I command
+line option, or by changing your Sass configuration options.
+*/
+@import 'lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+body {
+	background: red;
+	padding: 10px;
+}
