@@ -1,0 +1,31 @@
+.t-text-blogbar {
+	color: #555;
+	//font-size: 1.5em;
+}
+
+.t-cat {
+	margin-top: 15px;
+	font-variant: small-caps;
+
+	a{
+		color: $text-red;
+		margin: 0 em(5px);
+	}
+}
+.t-blog-title {
+	margin-top: 0;
+	font-size: 2.5em;
+
+	a {
+		color: #777;
+
+		&:hover {
+			color: #555;
+			text-decoration: none;
+		}
+	}
+}
+.t-blog-excerpt {
+	padding-top: em(5px);
+	border-top: 2px solid $body-color;
+}

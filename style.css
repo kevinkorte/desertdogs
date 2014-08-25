@@ -2111,7 +2111,7 @@ pre code {
 }
 
 /* line 11, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .m-post-wrapper, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .l-featured-image, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .l-ddu-blogwrapper, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .l-blog-body, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .m-ddu-single-post, .m-blog-meta, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2641,7 +2641,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .m-post-wrapper, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .l-featured-image, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .l-ddu-blogwrapper, .col-md-9, .l-blog-body, .col-md-10, .col-md-11, .col-md-12, .m-ddu-single-post, .m-blog-meta {
     float: left;
   }
 
@@ -2656,7 +2656,7 @@ pre code {
   }
 
   /* line 35, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-3 {
+  .col-md-3, .l-featured-image {
     width: 25%;
   }
 
@@ -2671,7 +2671,7 @@ pre code {
   }
 
   /* line 35, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6, .m-post-wrapper {
+  .col-md-6 {
     width: 50%;
   }
 
@@ -2681,12 +2681,12 @@ pre code {
   }
 
   /* line 35, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-8 {
+  .col-md-8, .l-ddu-blogwrapper {
     width: 66.66667%;
   }
 
   /* line 35, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-9 {
+  .col-md-9, .l-blog-body {
     width: 75%;
   }
 
@@ -2701,7 +2701,7 @@ pre code {
   }
 
   /* line 35, /Applications/MAMP/htdocs/desertdogswp/wp-content/themes/desertdogs/lib/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-12 {
+  .col-md-12, .m-ddu-single-post, .m-blog-meta {
     width: 100%;
   }
 
@@ -8045,15 +8045,87 @@ button.close {
     display: none !important;
   }
 }
+/**************************************************\
+SET VARIABLES
+\**************************************************/
 /* line 1, dev/sass/_base.scss */
 body {
-  background: #f1f1f1;
+  background: #d8d8d8;
+}
+
+/* line 12, dev/sass/_layout.scss */
+.l-featured-image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 15px 0;
 }
 
 /* line 1, dev/sass/_module.scss */
-.m-post-wrapper {
-  background-size: cover;
-  background-position: center;
+.m-ddu-blogbar {
+  padding: 0.92857em;
+  margin-bottom: 0.85714em;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 6, dev/sass/_module.scss */
+.m-ddu-single-post {
+  margin-bottom: 0.85714em;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 11, dev/sass/_module.scss */
+.m-blog-meta {
+  padding: 0.71429em;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 1px solid #e7e7e7;
+}
+/* line 19, dev/sass/_module.scss */
+.m-blog-meta span {
+  color: #999;
+}
+
+/* line 1, dev/sass/_theme.scss */
+.t-text-blogbar {
+  color: #555;
+}
+
+/* line 6, dev/sass/_theme.scss */
+.t-cat {
+  margin-top: 15px;
+  font-variant: small-caps;
+}
+/* line 10, dev/sass/_theme.scss */
+.t-cat a {
+  color: #cb2027;
+  margin: 0 0.35714em;
+}
+
+/* line 15, dev/sass/_theme.scss */
+.t-blog-title {
+  margin-top: 0;
+  font-size: 2.5em;
+}
+/* line 19, dev/sass/_theme.scss */
+.t-blog-title a {
+  color: #777;
+}
+/* line 22, dev/sass/_theme.scss */
+.t-blog-title a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+/* line 28, dev/sass/_theme.scss */
+.t-blog-excerpt {
+  padding-top: 0.35714em;
+  border-top: 2px solid #d8d8d8;
 }
 
 /*# sourceMappingURL=style.css.map */

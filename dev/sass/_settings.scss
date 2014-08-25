@@ -1,6 +1,20 @@
+/**************************************************\
+SET VARIABLES
+\**************************************************/
+
+$body-color : #d8d8d8;
+$text-red		: #cb2027; //change this to Desert Dogs Unleashed red
 
 //converts px to em
 //http://vvv.tobiassjosten.net/css/px-to-em-with-sass/
 @function em($px, $base: $font-size-base) {
 	@return ($px / $base) * 1em;
+}
+
+//blog module mixin. 
+@mixin blog-module() {
+	margin-bottom: em(12px);
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 }
