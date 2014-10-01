@@ -4,18 +4,10 @@ Theme URI: http://www.desertdogsunleashed.com
 Author: Kevin Korte
 Version: 1.0
 */
+//@import '../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+//@import "bootstrap.min.scss";
 
-/*
-FYI for future fix
-DEPRECATION WARNING: Importing from the current working directory will not be
-automatic in future versions of Sass.  To avoid future errors, you can add it
-to your environment explicitly by setting `SASS_PATH=.`, by using the -I command
-line option, or by changing your Sass configuration options.
-*/
-@import 'lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
-
-@import "settings";
-@import "base";
-@import "layout";
-@import "module";
-@import "theme";
+.col-md-8 {
+  background: url(http://localhost/desertdogswp/wp-content/uploads/2014/06/two-dogs.jpg);
+  height: 600px;
+}
