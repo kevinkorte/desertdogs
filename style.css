@@ -5,8 +5,25 @@ Author: Kevin Korte
 Version: 1.0
 */
 /* line 10, dev/sass/main.scss */
+body {
+  background: #ccc;
+}
+
+/* line 14, dev/sass/main.scss */
 .col-md-8 {
-  background: url(http://localhost/desertdogswp/wp-content/uploads/2014/06/two-dogs.jpg);
+  background: #fff;
+  height: 600px;
+}
+
+/* line 18, dev/sass/main.scss */
+.hero-container {
+  width: 100%;
+  max-width: 1600px;
+}
+
+/* line 22, dev/sass/main.scss */
+.hero-background {
+  background: red;
   height: 600px;
 }
 

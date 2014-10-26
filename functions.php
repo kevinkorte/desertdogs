@@ -1,7 +1,7 @@
 <?php
 
 function ddu_style() {
-  wp_enqueue_style( "bootstrap", get_template_directory_uri() . "/lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss" );
+  wp_enqueue_style( "bootstrap", get_template_directory_uri() . "/bootstrap.css" );
 	wp_enqueue_style( "style", get_template_directory_uri() . "/style.css" );
 }
 

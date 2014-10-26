@@ -13,7 +13,8 @@ module.exports = function(grunt) {
     				sourcemap : true,
     		},
     		files: {
-    			'style.css'	: 'dev/sass/main.scss'
+    			'style.css'	: 'dev/sass/main.scss',
+          'bootstrap.css' : 'lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss'
     		}
     	}
     },

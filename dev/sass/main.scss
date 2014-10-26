@@ -7,7 +7,19 @@ Version: 1.0
 //@import '../../lib/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
 //@import "bootstrap.min.scss";
 
+body {
+  background: #ccc;
+}
+
 .col-md-8 {
-  background: url(http://localhost/desertdogswp/wp-content/uploads/2014/06/two-dogs.jpg);
+  background: #fff;
+  height: 600px;
+}
+.hero-container {
+  width: 100%;
+  max-width: 1600px;
+}
+.hero-background {
+  background: red;
   height: 600px;
 }

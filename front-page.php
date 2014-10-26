@@ -1,19 +1,14 @@
 <?php get_header();?>
 <!--front-page.php-->
 
-<div class="container-fluid">
+<div class="container hero-container">
   <div class="row">
     <div class="col-md-8">
       Desert Dogs Unleashed
       Professional K9 Training
     </div>
-    <div class="col-md-4">
-      <div class="col-md-12">
-        Type One
-      </div>
-      <div class="col-md-12">
-        Type Two
-      </div>
+    <div class="col-md-4 hero-background">
+      
     </div>
   </div>
 </div>
